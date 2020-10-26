@@ -1,0 +1,40 @@
+{
+    "name": "2.0 M2 IA-Master Integration-Single Store",
+    "description": "Integration App 2.0 for Magento2- Single Store",
+    "install": [],
+    "version": "1.0.0",
+    "_registeredConnectionIds": [],
+    "update": {},
+    "settings": {},
+    "installSteps": [
+        {
+            "name": "NetSuite connection",
+            "description": "Configure your NetSuite connection",
+            "imageUrl": "/images/company-logos/netsuite.png",
+            "completed": false,
+            "type": "connection",
+            "sourceConnection": {
+                "type": "netsuite",
+                "externalId": "ia_2dot0_netsuite_connection",
+                "name": "NetSuite Connection"
+            }
+        },
+        {
+            "name": "M2 connection",
+            "description": "Configure your M2 connection",
+            "completed": false,
+            "type": "connection",
+            "sourceConnection": {
+                "type": "rest",
+                "externalId": "ia_2dot0_m2_connection",
+                "name": "Magento 2 Connection",
+                "assistant": "magento"
+            },
+            "function": "setUpFunction",
+            "_scriptId": "5f969a2b0674c0744a2a1707"
+        }
+    ],
+    "uninstallSteps": [],
+    "flowGroupings": [],
+    "initChild": {}
+}
