@@ -1,0 +1,53 @@
+{
+    "name": "2.0 M2 IA-Master integration - Multi Store",
+    "description": "Integration App 2.0 for Magento2 - Multi Store",
+    "install": [],
+    "version": "1.0.0",
+    "_registeredConnectionIds": [],
+    "update": {},
+    "settings": {
+        "testSetting": "1"
+    },
+    "settingsForm":{
+        "init": {
+            "_scriptId": "5f969a2b0674c0744a2a1707",
+            "function": "getSettings"
+        }
+    },
+    "preSave": {
+        "_scriptId": "5f969a2b0674c0744a2a1707",
+        "function": "preSave"
+    },
+    "preMap": {
+        "_scriptId": "5f969a2b0674c0744a2a1707",
+        "function": "preMap"
+    },
+    "postMap": {
+        "_scriptId": "5f969a2b0674c0744a2a1707",
+        "function": "postMap"
+    },
+    "postSubmit": {
+        "_scriptId": "5f969a2b0674c0744a2a1707",
+        "function": "postSubmit"
+    },
+    "installSteps": [
+        {
+            "name": "NetSuite connection",
+            "description": "Configure your NetSuite connection",
+            "imageUrl": "/images/company-logos/netsuite.png",
+            "completed": false,
+            "type": "connection",
+            "sourceConnection": {
+                "type": "netsuite",
+                "externalId": "ia_2dot0_netsuite_connection",
+                "name": "NetSuite Connection"
+            }
+        }
+    ],
+    "uninstallSteps": [],
+    "flowGroupings": [],
+    "initChild": {
+        "_scriptId": "5f969a2b0674c0744a2a1707",
+        "function": "addnewChild"
+    }
+}

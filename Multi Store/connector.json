@@ -1,0 +1,17 @@
+{
+    "name": "2.0 M2 Connector(Multi Store)",
+    "description": "Connector for IA 2.0 for Magento2(Multi Store)",
+    "published": true,
+    "managed": false,
+    "_sharedImportIds": [],
+    "_sharedExportIds": [],
+    "_iClientIdMap": [],
+    "applications": [
+        "magento",
+        "netsuite"
+    ],
+    "framework": "twoDotZero",
+    "twoDotZero": {
+        "_integrationId": "5f92a66bffe5f7166aa07919"
+    }
+}
